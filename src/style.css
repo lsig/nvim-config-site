@@ -1,3 +1,52 @@
-#container {
-  background-color: blue;
+header,
+nav {
+  display: flex;
+  color: #718ebc;
+  background-color: #1b1b27;
+  font-family: copperplate, Ariel;
+}
+
+body {
+  background-color: #1b1b27;
+}
+
+header {
+  justify-content: center;
+  font-size: 50px;
+  padding: 2rem 3rem;
+  margin-top: -0.5rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+nav {
+  justify-content: space-between;
+  height: 3rem;
+  font-size: 30px;
+  margin: 0rem -0.5rem;
+}
+
+#home-btn,
+#plugin-btn,
+#contact-btn {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  height: 70%;
+  width: 100%;
+  padding: 1% 4%;
+  border-top: 2px solid #718ebc;
+  border-bottom: 2px solid #718ebc;
+}
+
+#plugin-btn {
+  margin: 0rem 0.4rem;
+}
+
+nav .btn:hover {
+  font-size: 35px;
+  color: #aabbd7;
+  border-top: 8px solid #aabbd7;
+  border-bottom: 8px solid #aabbd7;
 }

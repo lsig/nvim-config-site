@@ -1,2 +1,9 @@
 import "./style.css";
-console.log("this works lol");
+import { createHeader, createNav } from "./home";
+
+const container = document.getElementById("container");
+const header = createHeader();
+const nav = createNav();
+
+document.body.insertBefore(header, container);
+document.body.insertBefore(nav, container);
