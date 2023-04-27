@@ -44,9 +44,16 @@ nav {
   margin: 0rem 0.4rem;
 }
 
-nav .btn:hover {
-  font-size: 35px;
+#home-btn:hover,
+#plugin-btn:hover,
+#contact-btn:hover {
+  font-size: 34px;
   color: #aabbd7;
-  border-top: 8px solid #aabbd7;
-  border-bottom: 8px solid #aabbd7;
+  border-top: 2px solid #aabbd7;
+  border-bottom: 2px solid #aabbd7;
+}
+
+.active {
+  color: #c1a97a;
+  text-shadow: 0 0 10px #c1a97a, 0 0 20px #c1a97a;
 }

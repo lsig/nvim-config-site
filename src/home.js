@@ -10,6 +10,8 @@ const createNav = () => {
   const menu = createBtn("Plugins", "plugin-btn");
   const contact = createBtn("Contact me", "contact-btn");
 
+  home.setAttribute("class", "active");
+
   nav.appendChild(home);
   nav.appendChild(menu);
   nav.appendChild(contact);
