@@ -31,11 +31,13 @@ const createSetup = () => {
   const install = createInstall();
   const config = createConfig();
   const plugManager = createPlugManager();
+  const enjoy = createEnjoySection();
 
   setupDiv.setAttribute("id", "setup");
   setupDiv.appendChild(install);
   setupDiv.appendChild(config);
   setupDiv.appendChild(plugManager);
+  setupDiv.appendChild(enjoy);
   return setupDiv;
 };
 
@@ -107,6 +109,23 @@ createPlugManager = () => {
   plugDiv.appendChild(plugParagraph);
   plugDiv.appendChild(plugLink);
   return plugDiv;
+};
+
+createEnjoySection = () => {
+  const enjoyDiv = document.createElement("div");
+  const enjoyHeader = document.createElement("h2");
+  const enjoyParagraph = document.createElement("p");
+  const enjoyHeaderText = document.createTextNode("4. Enjoy Neovim!");
+  const enjoyText = document.createTextNode(
+    "Now you have probably downloaded your first plugins, maybe written a little program using Neovim, I know at first it is tough; especially if you are just learning Vim motions. But trust me, it will be worth it, your productivity will go up, learning new motions and seeing noticable progress feels amazing, and the best part, Neovim is your own personalized text editor. No one will have the same experience as you, which I find amazing. Hope your Neovim journey will be long and fruitful, stay curious!  "
+  );
+
+  enjoyHeader.appendChild(enjoyHeaderText);
+  enjoyParagraph.appendChild(enjoyText);
+
+  enjoyDiv.appendChild(enjoyHeader);
+  enjoyDiv.appendChild(enjoyParagraph);
+  return enjoyDiv;
 };
 
 module.exports = {
