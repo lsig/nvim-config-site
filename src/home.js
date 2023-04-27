@@ -30,10 +30,12 @@ const createSetup = () => {
   const setupDiv = document.createElement("div");
   const install = createInstall();
   const config = createConfig();
+  const plugManager = createPlugManager();
 
   setupDiv.setAttribute("id", "setup");
   setupDiv.appendChild(install);
   setupDiv.appendChild(config);
+  setupDiv.appendChild(plugManager);
   return setupDiv;
 };
 
@@ -67,6 +69,7 @@ createConfig = () => {
   const confLink = document.createElement("a");
   confLink.href =
     "https://www.youtube.com/watch?v=w7i4amO_zaE&t=839s&ab_channel=ThePrimeagen";
+  confLink.target = "_blank";
   const linkText = document.createTextNode("Primes setup tutorial.");
 
   confHeader.appendChild(confHeaderText);
@@ -77,6 +80,33 @@ createConfig = () => {
   confDiv.appendChild(confParagraph);
   confDiv.appendChild(confLink);
   return confDiv;
+};
+
+createPlugManager = () => {
+  const plugDiv = document.createElement("div");
+  const plugHeader = document.createElement("h2");
+  const plugParagraph = document.createElement("p");
+  const plugHeaderText = document.createTextNode(
+    "3. Setting up your Neovim plugin manager"
+  );
+  const plugText = document.createTextNode(
+    "There are some popular Neovim plugin managers out there like Packer, Lazy and VimPlug. I personally use lazy.nvim which I am extremely happy with and mad props to folke. So I will focus on setting up on the Lazy plugin manager. Inside your <your-name> folder create a file called lazy.nvim. Goto lazy.nvim github page and follow the installation instructions, after that check out the plugins page and start adding the essential plugins listed there."
+  );
+  const plugLink = document.createElement("a");
+  plugLink.href = "https://github.com/folke/lazy.nvim";
+  plugLink.target = "_blank";
+  const linkText = document.createTextNode(
+    "Lazy.nvim on github, check it out!"
+  );
+
+  plugHeader.appendChild(plugHeaderText);
+  plugParagraph.appendChild(plugText);
+  plugLink.appendChild(linkText);
+
+  plugDiv.appendChild(plugHeader);
+  plugDiv.appendChild(plugParagraph);
+  plugDiv.appendChild(plugLink);
+  return plugDiv;
 };
 
 module.exports = {
