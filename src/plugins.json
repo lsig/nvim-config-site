@@ -1,0 +1,120 @@
+{
+  "lspPlugins": [
+    {
+      "name": "neovim/nvim-lspconfig",
+      "url": "https://github.com/neovim/nvim-lspconfig",
+      "description": "Lspconfig is a helper plugin that leverages the language client API in neovim core for an easier to use experience."
+    },
+    {
+      "name": "williamboman/mason.nvim",
+      "url": "https://github.com/williamboman/mason.nvim",
+      "description": "Portable package manager for Neovim that runs everywhere Neovim runs. Easily install and manage LSP servers, DAP servers, linters, and formatters."
+    },
+    {
+      "name": "williamboman/mason-lspconfig.nvim",
+      "url": "https://github.com/williamboman/mason-lspconfig.nvim",
+      "description": "Mason-lspconfig bridges mason.nvim with the lspconfig plugin - making it easier to use both plugins together."
+    },
+    {
+      "name": "onsails/lspkind.nvim",
+      "url": "https://github.com/onsails/lspkind.nvim",
+      "description": "This tiny plugin adds vscode-like pictograms to neovim built-in lsp"
+    },
+    {
+      "name": "glepnir/lspsaga.nvim",
+      "url": "https://github.com/glepnir/lspsaga.nvim",
+      "description": "Enhance your Neovim's lsp experience"
+    },
+    {
+      "name": "jose-elias-alvarez/null-ls.nvim",
+      "url": "https://github.com/jose-elias-alvarez/null-ls.nvim",
+      "description": "Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua."
+    }
+  ],
+  "cmpPlugins": [
+    {
+      "name": "hrsh7th/nvim-cmp",
+      "url": "https://github.com/hrsh7th/nvim-cmp",
+      "description": "A completion engine plugin for neovim written in Lua. Completion sources are installed from external repositories and \"sourced\". This plugin has a lot of dependencies which are not listed here, but are listed on github"
+    },
+    {
+      "name": "L3MON4D3/LuaSnip",
+      "url": "https://github.com/L3MON4D3/LuaSnip",
+      "description": "Snippet engine written in Lua"
+    },
+    {
+      "name": "rafamadriz/friendly-snippets",
+      "url": "https://github.com/rafamadriz/friendly-snippets",
+      "description": "Snippets collection for a set of different programming languages for faster development. The only goal is to have one community driven repository for all kinds of snippets in all programming languages, this way you can have it all in one place."
+    }
+  ],
+  "gitplugins": [
+    {
+      "name": "tpope/vim-fugitive",
+      "url": "https://github.com/tpope/vim-fugitive",
+      "description": "Fugitive is the premier Vim plugin for Git. Or maybe it's the premier Git plugin for Vim? Either way, it's \"so awesome, it should be illegal\". That's why it's called Fugitive."
+    },
+    {
+      "name": "lewis6991/gitsigns.nvim",
+      "url": "https://github.com/lewis6991/gitsigns.nvim",
+      "description": "Super fast git decorations implemented purely in lua/teal."
+    }
+  ],
+  "otherPlugins": [
+    {
+      "name": "folke/tokyonight.nvim",
+      "url": "https://github.com/folke/tokyonight.nvim",
+      "description": "A dark and light Neovim theme written in Lua ported from the Visual Studio Code TokyoNight theme. Includes extra themes for Kitty, Alacritty, iTerm and Fish. The colors of this website are inspired by the tokyonight colorscheme!"
+    },
+    {
+      "name": "nvim-treesitter/nvim-treesitter",
+      "url": "https://github.com/nvim-treesitter/nvim-treesitter",
+      "description": "The goal of nvim-treesitter is both to provide a simple and easy way to use the interface for tree-sitter in Neovim and to provide some basic functionality such as highlighting based on it."
+    },
+    {
+      "name": "nvim-telescope/telescope.nvim",
+      "url": "https://github.com/nvim-telescope/telescope.nvim",
+      "description": "telescope.nvim is a highly extendable fuzzy finder over lists. Built on the latest awesome features from neovim core. Telescope is centered around modularity, allowing for easy customization."
+    },
+    {
+      "name": "windwp/nvim-autopairs",
+      "url": "https://github.com/windwp/nvim-autopairs",
+      "description": "A super powerful autopair plugin for Neovim that supports multiple characters."
+    },
+    {
+      "name": "windwp/nvim-ts-autotag",
+      "url": "https://github.com/windwp/nvim-ts-autotag",
+      "description": "Use treesitter to autoclose and autorename html tags"
+    },
+    {
+      "name": "nvim-lualine/lualine.nvim",
+      "url": "https://github.com/nvim-lualine/lualine.nvim",
+      "description": "A blazingly fast and easy to configure Neovim statusline written in Lua."
+    },
+    {
+      "name": "echasnovski/mini.surround",
+      "url": "https://github.com/echasnovski/mini.surround",
+      "description": "Fast and feature-rich surround actions"
+    },
+    {
+      "name": "numToStr/Comment.nvim",
+      "url": "https://github.com/numToStr/Comment.nvim",
+      "description": "Smart and Powerful commenting plugin for neovim"
+    },
+    {
+      "name": "folke/todo-comments.nvim",
+      "url": "https://github.com/folke/todo-comments.nvim",
+      "description": "todo-comments is a lua plugin for Neovim 0.5 to highlight and search for todo comments like TODO, HACK, BUG in your code base."
+    },
+    {
+      "name": "tpope/vim-sleuth",
+      "url": "https://github.com/tpope/vim-sleuth",
+      "description": "Plugin that automatically adjusts 'shiftwidth' and 'expandtab' heuristically based on the current file"
+    },
+    {
+      "name": "christoomey/vim-tmux-navigator",
+      "url": "https://github.com/christoomey/vim-tmux-navigator",
+      "description": "When combined with a set of tmux key bindings, the plugin will allow you to navigate seamlessly between vim and tmux splits using a consistent set of hotkeys."
+    }
+  ]
+}
