@@ -28,12 +28,19 @@ const createBtn = (text, id) => {
 
 const createSetup = () => {
   const setupDiv = document.createElement("div");
+  const setupHeader = document.createElement("h1");
+  const setupHeaderText = document.createTextNode(
+    "Setting up your Neovim config"
+  );
   const install = createInstall();
   const config = createConfig();
   const plugManager = createPlugManager();
   const enjoy = createEnjoySection();
 
+  setupHeader.appendChild(setupHeaderText);
+
   setupDiv.setAttribute("id", "setup");
+  setupDiv.appendChild(setupHeader);
   setupDiv.appendChild(install);
   setupDiv.appendChild(config);
   setupDiv.appendChild(plugManager);
@@ -47,7 +54,7 @@ const createInstall = () => {
   const installParagraph = document.createElement("p");
   const installHeaderText = document.createTextNode("1. Installation");
   const installText = document.createTextNode(
-    "To install Neovim, a user can go to the official website at <a href='neovim.io' target='_blank'>neovim.io</a> and follow the installation instructions provided for their specific operating system. Neovim supports various platforms including Windows, macOS, and Linux."
+    "To install Neovim, a user can go to the official website at neovim.io and follow the installation instructions provided for their specific operating system. Neovim supports various platforms including Windows, macOS, and Linux."
   );
 
   installHeader.appendChild(installHeaderText);

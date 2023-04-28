@@ -57,3 +57,12 @@ nav {
   color: #c1a97a;
   text-shadow: 0 0 10px #c1a97a, 0 0 20px #c1a97a;
 }
+
+#setup {
+  color: #a9b3d9;
+  margin: 4rem 16rem;
+}
+
+a {
+  color: #c1a97a;
+}
