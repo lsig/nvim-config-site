@@ -12,12 +12,21 @@ const loadHeaderNav = (() => {
   document.body.insertBefore(nav, container);
 })();
 
+const setNewActiveTab = (btn_name) => {
+  const activeBtn = document.querySelector(".active");
+  activeBtn.classList.remove("active");
+
+  const button = document.getElementById(btn_name);
+  button.classList.add("active");
+};
+
 const loadHomePage = () => {
   const setup = createSetup();
 
   container.innerHTML = "";
 
   container.appendChild(setup);
+  setNewActiveTab("home-btn");
 };
 
 const loadPluginPage = () => {
@@ -26,6 +35,16 @@ const loadPluginPage = () => {
   container.innerHTML = "";
 
   container.appendChild(pluginSetup);
+  setNewActiveTab("plugin-btn");
 };
+
+const setEventListeners = (() => {
+  const homeButton = document.getElementById("home-btn");
+  const pluginButton = document.getElementById("plugin-btn");
+  const contactButton = document.getElementById("contact-btn");
+
+  homeButton.addEventListener("click", () => loadHomePage());
+  pluginButton.addEventListener("click", () => loadPluginPage());
+})();
 
 loadHomePage();

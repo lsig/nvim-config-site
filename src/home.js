@@ -65,7 +65,7 @@ const createInstall = () => {
   return installDiv;
 };
 
-createConfig = () => {
+const createConfig = () => {
   const confDiv = document.createElement("div");
   const confHeader = document.createElement("h2");
   const confParagraph = document.createElement("p");
@@ -91,7 +91,7 @@ createConfig = () => {
   return confDiv;
 };
 
-createPlugManager = () => {
+const createPlugManager = () => {
   const plugDiv = document.createElement("div");
   const plugHeader = document.createElement("h2");
   const plugParagraph = document.createElement("p");
@@ -118,7 +118,7 @@ createPlugManager = () => {
   return plugDiv;
 };
 
-createEnjoySection = () => {
+const createEnjoySection = () => {
   const enjoyDiv = document.createElement("div");
   const enjoyHeader = document.createElement("h2");
   const enjoyParagraph = document.createElement("p");
@@ -135,8 +135,4 @@ createEnjoySection = () => {
   return enjoyDiv;
 };
 
-module.exports = {
-  createHeader,
-  createNav,
-  createSetup,
-};
+export { createHeader, createNav, createSetup };

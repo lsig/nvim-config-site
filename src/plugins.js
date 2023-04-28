@@ -41,9 +41,9 @@ const createPluginGroup = (groupName, pluginArr) => {
 
 const createPluginSetup = () => {
   const pluginSetupDiv = document.createElement("div");
-  const pluginSetupHeader = document.createElement("h2");
+  const pluginSetupHeader = document.createElement("h1");
   const pluginSetupHeaderText = document.createTextNode(
-    "A list of current plugins &#128268;"
+    "A list of current plugins 🔌"
   );
 
   pluginSetupHeader.appendChild(pluginSetupHeaderText);
@@ -65,6 +65,4 @@ const createPluginSetup = () => {
   return pluginSetupDiv;
 };
 
-module.exports = {
-  createPluginSetup,
-};
+export { createPluginSetup };
