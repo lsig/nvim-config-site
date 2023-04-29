@@ -1,6 +1,7 @@
 import "./style.css";
 import { createHeader, createNav, createSetup } from "./home";
 import { createPluginSetup } from "./plugins";
+import { createContactSetup } from "./contact";
 
 const container = document.getElementById("container");
 
@@ -38,6 +39,15 @@ const loadPluginPage = () => {
   setNewActiveTab("plugin-btn");
 };
 
+const loadContactPage = () => {
+  const contactSetup = createContactSetup();
+
+  container.innerHTML = "";
+
+  container.appendChild(contactSetup);
+  setNewActiveTab("contact-btn");
+};
+
 const setEventListeners = (() => {
   const homeButton = document.getElementById("home-btn");
   const pluginButton = document.getElementById("plugin-btn");
@@ -45,6 +55,7 @@ const setEventListeners = (() => {
 
   homeButton.addEventListener("click", () => loadHomePage());
   pluginButton.addEventListener("click", () => loadPluginPage());
+  contactButton.addEventListener("click", () => loadContactPage());
 })();
 
 loadHomePage();

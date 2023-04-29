@@ -43,7 +43,7 @@ const createPluginSetup = () => {
   const pluginSetupDiv = document.createElement("div");
   const pluginSetupHeader = document.createElement("h1");
   const pluginSetupHeaderText = document.createTextNode(
-    "A list of current plugins 🔌"
+    "A list of my current plugins 🔌"
   );
 
   pluginSetupHeader.appendChild(pluginSetupHeaderText);
